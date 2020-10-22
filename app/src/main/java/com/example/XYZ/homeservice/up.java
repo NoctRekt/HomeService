@@ -81,6 +81,14 @@ public class up extends AppCompatActivity {
         }
         if (phone.length() < 10 ) {
           //  etphone.setError("Phone no is required");
+            Toast.makeText(getApplicationContext(),"Enter Phone No",Toast.LENGTH_SHORT).show();
+            etphone.requestFocus();
+            return;
+        }
+
+        if (!Patterns.PHONE.matcher(email).matches())
+        {
+           // etphone.setError("Enter Valid Phone Number");
             Toast.makeText(getApplicationContext(),"Enter Valid Phone No",Toast.LENGTH_SHORT).show();
             etphone.requestFocus();
             return;

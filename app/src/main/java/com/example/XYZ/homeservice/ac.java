@@ -1,5 +1,6 @@
 package com.example.XYZ.homeservice;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -86,13 +87,16 @@ tvmail=u.getEmail();
             String post_id = databaseCustomer.push().getKey();
             Customer customer = new Customer(post_id,myuid,tvname,tvmail,tvphone,address,selected,type);
             databaseCustomer.child(post_id).setValue(customer);
+            startActivity(new Intent(ac.this,complaintsuccess.class));
 
             //String post_id=dataComplaint.push().getKey();
             /*Post post=new Post(myuid,post_id);
             dataComplaint.child(myuid).setValue(post);*/
 
-            Toast.makeText(getApplicationContext(), "Complaint Place Successfully", Toast.LENGTH_SHORT).show();
-        }else{
+           // Toast.makeText(getApplicationContext(), "Complaint Place Successfully", Toast.LENGTH_SHORT).show();
+        }
+        else
+            {
             Toast.makeText(getApplicationContext(),"Complaint Place Unsuccessfully",Toast.LENGTH_SHORT).show();
         }
 

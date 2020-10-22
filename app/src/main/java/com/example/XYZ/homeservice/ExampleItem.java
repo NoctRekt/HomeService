@@ -1,8 +1,6 @@
 package com.example.XYZ.homeservice;
 
-/**
- * Created by Milind on 9/22/2018.
- */
+
 
 public class ExampleItem {
     private int mImage;

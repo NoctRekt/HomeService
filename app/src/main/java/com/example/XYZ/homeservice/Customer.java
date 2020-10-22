@@ -1,8 +1,6 @@
 package com.example.XYZ.homeservice;
 
-/**
- * Created by Milind on 9/1/2018.
- */
+
 
 public class Customer {
     String post;
