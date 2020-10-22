@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#990105</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorDarkGreen">#70b94e</color>
+    <color name="colorGrey">#a870b1</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="tgreen">#c473b2ec</color>
+    <color name="tred">#f3f17f23</color>
+    <color name="colorWhiteTransparent">#80ffffff</color>
+
+    <color name="active_dots">#e0cf0e0e</color>
+    <color name="inactive_dots">#d483878b</color>
+
+    <color name="texttablight">#ffb0bb</color>
+    <color name="texttabBright">#ffffff</color>
+    <color name="bg">#ef6a28</color>
+
+    <color name="textbg">#dad9d0d1</color>
+    <color name="cv">#edc8ccc7</color>
+</resources>

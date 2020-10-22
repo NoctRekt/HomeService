@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.milind.homeservice.selected">
+
+
+    <include
+        android:id="@+id/washing"
+        layout="@layout/app_bar_layout" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/washing"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="16dp"
+        android:text="Select Type of Service"
+        android:textStyle="bold" />
+
+    <RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/textView4"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:id="@+id/rbService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView4"
+            android:layout_below="@+id/textView4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:checked="true"
+            android:text="Servicing" />
+
+        <RadioButton
+            android:id="@+id/rbRepair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/cardView2"
+            android:layout_below="@+id/textView4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="Repair" />
+
+</RadioGroup>
+
+    <Button
+        android:background="@drawable/et_bg"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/btnmake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/cardView2"
+        android:layout_margin="20dp"
+        android:layout_marginTop="22dp"
+        android:text="Make Complaint" />
+
+    <TextView
+        android:id="@+id/tvinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/cardView2"
+        android:layout_below="@+id/radioGroup"
+        android:text="* Service Cost is Base on inspection"
+        android:textSize="10sp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvinfo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/texttabBright"
+        app:cardCornerRadius="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Manage Your Address" />
+
+        <EditText
+            android:id="@+id/etaddress"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:inputType="textPostalAddress" />
+
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
